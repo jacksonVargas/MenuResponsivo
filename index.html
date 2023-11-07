@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Teste</title>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="logo"><a href="#home">Logo</a></div>
+
+      <ul class="side hide">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+
+      <div class="btn"></div>
+    </div> <!-- menu -->
+  </header>
+
+  <section id="home">
+    <h1>HOME PAGE</h1>
+  </section>
+
+  <section id="about">
+    <h1>ABOUT PAGE</h1>
+  </section>
+
+  <section id="team">
+    <h1>TEAM PAGE</h1>
+  </section>
+
+
+  <section id="blog">
+    <h1>BLOG PAGE</h1>
+  </section>
+
+  <section id="services">
+    <h1>SERVICES PAGE</h1>
+  </section>
+  
+  <section id="contact">
+    <h1>CONTACT PAGE</h1>
+  </section>
+
+  <script>
+    const btn = document.querySelector('.btn')
+    btn.onclick = () => {
+      btn.classList.toggle('active')
+      const side = document.querySelector('.side')
+      if(side.classList.contains('hide')) {
+        side.classList.add('show')
+        side.classList.remove('hide')
+      }else {
+        side.classList.add('hide')
+        side.classList.remove('show')
+      }
+    }
+  </script>
+</body>
+</html>
